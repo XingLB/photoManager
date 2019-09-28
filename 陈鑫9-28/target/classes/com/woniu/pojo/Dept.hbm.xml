@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-9-27 17:22:53 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.woniu.pojo.Dept" table="dept" catalog="demo" optimistic-lock="version">
+        <id name="deptno" type="java.lang.Integer">
+            <column name="deptno" />
+            <generator class="identity" />
+        </id>
+        <property name="dname" type="string">
+            <column name="dname" length="14" />
+        </property>
+        <property name="loc" type="string">
+            <column name="loc" length="13" />
+        </property>
+    </class>
+</hibernate-mapping>
